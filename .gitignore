@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# environment files
+.env
+.env.local
+client/.env
+server/.env
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.dbgit rm -r --cached server/node_modules
