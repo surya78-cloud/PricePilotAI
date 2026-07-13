@@ -1,7 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://pricepilot-ai-backend.onrender.com",
+    baseURL: "https://pricepilot-ai-backend.onrender.com/api",
+    headers: {
+        "Content-Type": "application/json",
+    },
 });
 
 // Automatically attach JWT token to every request
@@ -14,6 +17,11 @@ api.interceptors.request.use((config) => {
     }
 
     return config;
+
+}, (error) => {
+
+    return Promise.reject(error);
+
 });
 
 export default api;
