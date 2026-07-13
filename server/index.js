@@ -18,7 +18,8 @@ app.use(
     cors({
         origin: [
             "http://localhost:5173",
-            "https://pricepilotai.suryachauhan6607.workers.dev"
+            "https://pricepilotai.suryachauhan6607.workers.dev",
+            "https://cozy-centaur-959898.netlify.app"
         ],
         credentials: true
     })
